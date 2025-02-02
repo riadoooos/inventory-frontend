@@ -4,12 +4,16 @@ import Dashboard from "./screens/Dashboard";
 import Login from "./components/Login";
 import Layout from "./Layout/Layout";
 import "./App.css";
+import LoginScreen from "./screens/userScreens/LoginScreen";
+import RegisterScreen from "./screens/userScreens/RegisterScreen";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" exact element={<Landing />} />
+        <Route path="/login" exact element={<LoginScreen />} />
+        <Route path="/register" exact element={<RegisterScreen />} />
         <Route
           path="/dashboard"
           element={
